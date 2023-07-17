@@ -19,8 +19,7 @@ Tutor: Timoteo Gambella
 
 ✅ Link del repo:  https://github.com/CeciliaDomi/PreEntrega3Dominici.git
 
-
-✅ Link de Page:
+✅ Link de Page: https://ceciliadomi.github.io/PreEntrega3Dominici/
 
 
 ---------------------------------------------------

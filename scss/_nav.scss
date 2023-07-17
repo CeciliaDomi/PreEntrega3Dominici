@@ -1,0 +1,52 @@
+// ELEMENTOS BOOTSTRAP NAV MENU - INDEX.HTML
+header{
+    text-align: center;
+    position: sticky;
+    background-color: $colorWhite;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 10;
+    border-bottom: 2px solid $colorMain;
+}
+
+.logo-size {
+    width: 200px;
+    height: 40px;
+}
+
+.img-icon{
+    width: 30px;
+    &:hover{
+        opacity: 0.8;
+        transform: scale(1.1);
+    }
+}
+
+.botonera {
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    padding: 20px 30px;
+    ul li{
+        padding-right: 20px;
+    }
+}
+
+.navbar-nav li a {
+    color: $colorMain;
+    &:hover{
+        font-weight: 600;
+        color: $colorMain;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        text-decoration: underline $colorYellow;
+        text-underline-offset: 8px ;
+    }
+}
+
+.container-fluid a{
+    padding-left: 10px;
+}

@@ -1,0 +1,92 @@
+// ELEMENTOS PAGINA SOSTENIBILIDAD // SOSTENIBILIDAD.HTML
+
+.sostenibilidad1, .sostenibilidad3{
+    padding: 25px 10px;
+    width: 90%;
+    @include flex(row,center,center);
+    button{
+        border: none;
+        &:hover{
+            background-color: $colorPurple;
+            
+        }
+    }
+}
+
+.sost-img, .sost-img2 .sost-video{
+    width: 50%;
+    align-items: center;
+    text-align: center;
+}
+
+.sost-img2 .sost-video{
+    width: 60%;
+    align-items: center;
+    text-align: center;
+}
+
+.sost-video{
+    padding: 20px;
+    iframe{
+        width: 400px;
+    }
+}
+  
+.sost-text {
+    width: 40%;
+    text-align: center;
+    padding: 8px 20px;
+}
+
+.sostenibilidad2{
+    padding: 25px 10px;
+    width: 100%;
+    background-color: $colorYellow2;
+    @include flex(row,center,center);
+    button{
+        border: none;
+        &:hover{
+            background-color: $colorPurple;
+        }
+    }
+}
+
+h2{
+    position: relative;
+    text-decoration: none;
+    &::before{
+        background: $colorYellow;
+        content: "";
+        inset: 0;
+        position: absolute;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s ease-in-out;
+        z-index: -1; 
+    }
+    &:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        cursor: pointer;
+    }
+}
+
+.title-qs{
+    position: relative;
+    text-decoration: none;
+    &::before{
+        background: $colorMain;
+        content: "";
+        inset: 0;
+        position: absolute;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s ease-in-out;
+        z-index: -1; 
+    }
+    &:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        cursor: pointer;
+    }
+}

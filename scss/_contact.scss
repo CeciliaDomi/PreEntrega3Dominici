@@ -1,0 +1,138 @@
+// ELEMENTOS SECCION CONTACTO // CONTACTO.HTML */
+
+.contenedor-contact {
+    @include wrap(flex-start,100%,20px 30px);
+    line-height: 1, 4em;
+    align-items: flex-start;
+    section{
+        margin-bottom: 20px;
+        padding: 10px 50px;
+    }
+}
+
+.form-contact {
+    width: 50%;
+    padding: 20px;
+    border-radius: 2px;
+    border: solid 1px $colorMain;
+    button{
+        border: none;
+        background-color:$colorMain;
+        width: 100px;
+        border-radius: 20px;
+        padding: 10px;
+        font-size: 1em;
+        color:$colorWhite;
+        &:hover{
+            border: none;
+            color:$colorWhite;
+            width: 120px;
+            background-color:$colorYellow;
+        }
+    }
+    label{
+        color:$colorMain;
+    }
+}
+
+.form-text {
+    color:$colorSecu;
+}
+
+.form-check-input:checked {
+    background-color:$colorSecu;
+    border-color:$colorSecu;
+    box-shadow: none;
+}
+
+.map-contact {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.contact {
+    width: 50%;
+    @include flex(column,flex-start,flex-start);
+    flex-wrap: nowrap;
+    button{
+        border: none;
+        &:hover{
+            background-color:$colorYellow;
+        }
+    }
+}
+
+.cont-text {
+    text-align: start;
+    padding: 20px;
+}
+
+.linea2 {
+    margin: 5px 0;
+    border-bottom: solid;
+    padding-bottom: 10px;
+    width: 20%;
+    border-top-width: 4px;
+    border-top-color: #6e4c3d;
+}
+
+.datalist {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 10px;
+    ul{
+        li{
+            @include flex(row,flex-start,flex-start);
+            margin: 20px 0;
+        }
+    }
+    img{
+        padding: 0 10px;
+    }
+}
+
+.cont-red {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 5px 10px;
+    a{
+        list-style: none;
+        text-decoration: none;
+        margin: 10px;
+        &:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+            transition: all 0.5s ease;
+        }
+    }
+}
+
+.text-form {
+    font-family: $mainFont;
+    font-size: $textL;
+    margin: 10px 0;
+    line-height: 1em;
+}
+
+h2{
+    position: relative;
+    text-decoration: none;
+    &::before{
+        background: $colorYellow;
+        content: "";
+        inset: 0;
+        position: absolute;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s ease-in-out;
+        z-index: -1; 
+    }
+    &:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        cursor: pointer;
+    }
+}

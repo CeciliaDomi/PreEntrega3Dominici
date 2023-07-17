@@ -1,0 +1,225 @@
+// slider portada
+.intro {
+    background-color: $colorBg2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    @include flex(row, space-between, center);
+    align-content: center;
+    padding: 30px;
+}
+
+
+.intro-img {
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    img {
+        width: 70%;
+        object-fit: cover;
+        &:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+            transition: all 2s ease;
+        }
+    }
+
+}
+
+.intro-text {
+    width: 40%;
+    align-items: center;
+    text-align: center;
+    h1 {
+        color: $colorMain;
+        position: relative;
+        &::before {
+            background: $colorYellow;
+            content: "";
+            inset: 0;
+            position: absolute;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.5s ease-in-out;
+            z-index: -1;
+        }
+        &:hover::before {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+    }
+}
+
+.white {
+    color: $colorWhite;
+}
+
+.list {
+    @include flex(row, right, center);
+}
+
+// ELEMENTOS SECCION PRODUCTOS DE LA HOME -- INDEX.HTML
+
+.produ-home {
+    @include wrap(space-between, 100%, 8px 30px);
+    figure {
+        width: 300px;
+        padding: 10px 30px;
+        @include flex(column, center, center);
+        figcaption {
+            font-size: 1, 6em;
+            font-family: $secuFont;
+            font-weight: $textBold;
+            margin: 5px 0;
+        }
+    }
+}
+
+// ELEMENTOS SECCION SERVICIOS DE LA HOME -- INDEX.HTML
+
+.servicios {
+    @include flex(row, space-around, center);
+    padding: 30px;
+}
+
+.icono-serv {
+    width: 100%;
+    @include flex(row, space-around, center);
+    margin: 5px 40px;
+    transition: transform .2s;
+    flex-wrap: wrap;
+    img {
+        padding: 15px;
+        transition: transform .2s;
+        width: 270px;
+        height: 270px;
+        margin: 0 auto;
+        &:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+            transition: all 1s ease;
+        }
+    }
+}
+
+.text-yellow {
+    color: $colorYellow;
+}
+
+.button-saber {
+    background-color: $colorMain;
+    color: $colorWhite;
+}
+
+::placeholder {
+    color: $colorWhite;
+    font-style: italic;
+    padding: 15px;
+}
+
+// ELEMENTOS SECCION NOSOTROS DE LA HOME /INDEX.HTML
+
+.nosotros {
+    width: 100%;
+    padding: 10px 20px;
+    @include flex(row, space-between, center);
+}
+
+.nos-img {
+    width: 60%;
+    align-items: center;
+    text-align: center;
+    img {
+        width: 100%;
+    }
+}
+
+.nos-text {
+    width: 40%;
+    text-align: center;
+    padding: 8px 20px;
+    h2 {
+        color: $colorMain;
+        position: relative;
+        &::before {
+            background: $colorYellow;
+            content: "";
+            inset: 0;
+            position: absolute;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.5s ease-in-out;
+            z-index: -1;
+        }
+        &:hover::before {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+    }
+}
+
+// ELEMENTOS SECCION NEWSLETTER DE LA HOME -- INDEX.HTML */
+
+.newsletter {
+    background-color: #e8e6dc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 0;
+    position: relative;
+    @include flex(row, space-between, center);
+}
+
+.news-text {
+    text-align: center;
+}
+
+.news-center {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.news-img {
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: auto;
+    img {
+        align-items: center;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.button-h button {
+    margin-left: 8px;
+    background-color: $colorWhite;
+    padding: 6px;
+    border: none;
+    border-radius: 8px;
+    &:hover {
+        background-color: $colorYellow;
+        color: $colorBlack;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        transform: scale(1.1);
+    }
+
+    input {
+        padding: 6px 30px;
+        border-radius: 10px;
+        border: solid;
+        border-color: $colorMain;
+        background-color: $colorWhite;
+    }
+}
+
+.form-home {
+    width: 15%;
+    align-items: center;
+    display: inline;
+    &::placeholder {
+        color: $colorMain;
+        text-align: center;
+    }
+}

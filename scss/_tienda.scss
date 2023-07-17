@@ -1,0 +1,226 @@
+// ELEMENTOS SECCION TIENDA / TIENDA.HTML */
+
+
+.category {
+    padding: 0 20px 30px 30px;
+    span{
+        @include text(0.8em,300,#6e4c3d);
+        display: block;
+        margin: 10px 0;
+        letter-spacing: 1px;
+        font-family: $secuFont;
+    }
+    label{
+        @include text(1em,400,#6e4c3d);
+        align-items: center;
+    }
+    select{
+        @include text(1em,400,#6e4c3d);
+        border: none;
+        font-style: italic;
+        background-color:$colorWhite;
+        margin-bottom: 10px;
+        &:hover{
+            font-weight:$textBold;
+
+        }
+    }
+    a{
+        color:$colorMain;
+        font-size:$textS;
+        text-decoration: none;
+        margin-bottom: 4px;
+        &:hover{
+            color:$colorMain;
+            font-weight: $textExtraBold;
+        }
+    }
+    li{
+        padding-left: 10px;
+        list-style: none;
+    }
+}
+
+.colorsize-link {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.linea {
+    border-bottom: 1px solid $colorMain;
+    padding-bottom: 10px;
+}
+
+.color-circle {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    margin: 4px 4px 0px 5px;
+    float: none;
+    background-size: cover;
+}
+
+.square {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+    margin: 4px 4px 0px 5px;
+}
+
+.purple {
+    background-color:$colorPurple;
+}
+
+.black {
+    background-color:$colorBlack;
+}
+
+.yellow {
+    background-color:$colorYellow;
+}
+
+.green {
+    background-color: $colorGreen;
+}
+
+.popheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+    .popheader button {
+        margin-left: 10px;
+        background-color:$colorMain;
+        color:$colorWhite;
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+    }
+
+        .popheader button:hover {
+            background-color: $colorPurple;
+        }
+
+    .popheader input {
+        padding: 6px 30px;
+        border-radius: 10px;
+        border: solid;
+        border-color:$colorMain;
+        background-color:$colorWhite;
+    }
+
+.text-tienda {
+    @include text(2.3em,600,#6e4c3d);
+    font-family: $mainFont;
+    padding: 10px 30px;
+        position: relative;
+        text-decoration: none;
+        &::before{
+            background: $colorYellow;
+            content: "";
+            inset: 0;
+            position: absolute;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.5s ease-in-out;
+            z-index: -1; 
+        }
+        &:hover::before{
+            transform: scaleX(1);
+            transform-origin: left;
+            cursor: pointer;
+        }
+    }
+
+.order-buton {
+    @include text(1em,600,#6e4c3d);
+    font-family:$secuFont;
+    padding: 6px 30px;
+    border-radius: 10px;
+    border: solid;
+    border-color:$colorMain;
+    background-color:$colorWhite;
+}
+
+.navegar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+    .navegar a {
+        font-family:$secuFont;
+        @include text(1em,600,#6e4c3d);
+    }
+
+        .navegar a:hover {
+            color: orange;
+        }
+
+    .navegar button {
+        padding: 10px;
+        border: none;
+    }
+
+.tienda {
+    display: grid;
+    grid-template-columns: 30% repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "popheader popheader popheader"
+        "category products products"
+        "category products products"
+        "navegar navegar navegar";
+    gap: 10px;
+    padding: 20px;
+    margin: 0 10px;
+}
+
+.tienda .popheader {
+    padding: 0 30px;
+    grid-area: popheader;
+}
+
+.tienda .category {
+    grid-area: category;
+}
+
+.tienda .products {
+    grid-area: products;
+}
+
+.tienda .navegar {
+    grid-area: navegar;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+    .products section {
+        @include flex(column,center,center);
+        padding: 10px 15px;
+    }
+
+    .products img{
+        width: 100%;
+    }    
+
+.produ1, .produ2, .produ3, .produ4 {
+    text-align: center;
+    align-items: center;
+}

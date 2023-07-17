@@ -1,0 +1,76 @@
+//extends
+.button{
+    border: none;
+    width: 150px;
+    border-radius: 20px;
+    padding: 8px;
+    width: 150px;
+    font-size: $textS;
+    text-align: center;
+    background-color:$colorMain;
+    color:$colorWhite;
+    &:hover{
+        border: none;
+        background-color:$colorYellow;
+        color:$colorBlack;
+        cursor: pointer;
+        transition: all 1s ease;
+    }    
+}
+
+.button-tienda{
+    background-color:$colorYellow;
+    color:$colorBlack;
+    @extend .button;
+    font-size: $textS;
+    text-align: center;
+    &:hover{
+        border: none;
+        background-color:$colorPurple;
+        color:$colorWhite;
+        cursor: pointer;
+        transition: all 1s ease;
+    } 
+}
+
+// mixins
+
+@mixin flex($fdire,$just,$ali){
+    display: flex;
+    flex-direction: $fdire;
+    justify-content: $just;
+    align-items: $ali;
+}
+
+// .quienes {
+//      @include flex(row,space-between,center);
+// } 
+
+@mixin wrap($just,$widht,$padd){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $just;
+    width: $widht;
+    padding: $padd;
+}
+
+// .produ-home {
+//      @include wrap(space-between,100%,8px 30px);
+// } 
+
+@mixin text($size,$weigh,$color){
+    text-decoration: none;
+    color: $color;
+    font-size:$size;
+    font-weight: $weigh;     
+}
+
+// .text-tienda {
+//      @include text(2.3em,600,#6e4c3d);
+// } 
+
+
+    
+
+
+

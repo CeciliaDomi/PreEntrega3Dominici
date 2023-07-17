@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Somos una tienda de moda ética y sostenible en Barcelona. Diseñamos prendas certificadas y confeccionadas utilizando tejidos naturales 100% orgánicos.">
+    <meta name="author" content="Cecilia Dominici">
+    <meta name="copyright" content="AlmaPura | Moda Sostenible © 2023 - Todos los derechos reservados">
+    <meta name="robots" content="follow"/> 
+    <title>AlmaPura  | Moda Sostenible - Nuestra Tienda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../img/favicon-ap.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md .bg-success botonera">
+            <div class="container-fluid">
+                <a href="../index.html">
+                    <img src="../img/logos/logo-ap.svg" class="logo-size" alt="logo de alma pura">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#6e4c3d" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./quienessomos.html">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sostenibilidad.html">Sostenibilidad</a>
+                        </li>
+                        <li class="nav-item dropdown list">
+                            <a class="nav-link active" href="./tienda.html">Tienda</a>
+                            <span class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"></span>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Coleccion SS23</a></li>
+                                <li><a class="dropdown-item" href="#">Rebajas</a></li>
+                                <li><a class="dropdown-item" href="#">Edición Party</a></li>
+                                <li><a class="dropdown-item" href="#">Edición Sport</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="icon-color">
+                            <a href="#">
+                                <img src="../img/icon/icono-ap-carrito.svg" href="#" class="img-icon"
+                                    alt="icono de carrito de compra">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ends header -->
+    <main>
+        <div class="portada">
+            <h1 class="white center">Tienda</h1>
+            <img src="../img/backg/backg-portadas.webp" alt="fondo montaña portadas">
+        </div>
+        <section class="tienda">
+            <div class="popheader">
+                <form class="search-shop">
+                    <input type="text" placeholder="buscar">
+                    <button type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                            class="bi bi-search-heart" viewBox="0 0 16 16">
+                            <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z" />
+                            <path d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5ZM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z" />
+                        </svg>
+                    </button>
+                </form>
+                <div>
+                    <h2 class="text-tienda">Todos los Productos</h2>
+                </div>
+                <select class="order-buton" name="order">
+                    <option>Ordenar Por</option>
+                    <option value="precioup">Precio Ascendente</option>
+                    <option value="preciodown">Precio Descendente</option>
+                    <option value="lomasvisto">Lo más visto</option>
+                    <option value="novedades">Novedades</option>
+                </select>
+            </div>
+            <section class="category">
+                <form>
+                    <select name="outlet">
+                        <option>Outlet</option>
+                        <option value="recicla">Recicla</option>
+                        <option value="vintage">Vintage</option>
+                        <option value="repara">Repara</option>
+                    </select>
+                    <select name="coleccion">
+                        <option>Colección</option>
+                        <option value="ss23">SS23</option>
+                        <option value="ow22">OW22</option>
+                        <option value="ss22">SS22</option>
+                    </select>
+                    <select name="ofertas">
+                        <option>Ver Todo</option>
+                        <option value="outlet">Nuevo</option>
+                        <option value="rebajas">Consejos</option>
+                        <option value="reciclaje">Categorias</option>
+                    </select>
+                    <div class="linea"></div>
+                    <span class="movil-cat"><b>CATEGORÍAS</b></span>
+                    <ul>
+                        <li>
+                            <a href="#">Abrigos (7)</a>
+                        </li>
+                        <li>
+                            <a href="#">Camisas (10)</a>
+                        </li>
+                        <li>
+                            <a href="#">Cardigan (1)</a>
+                        </li>
+                        <li>
+                            <a href="#">Tops (1)</a>
+                        </li>
+                        <li>
+                            <a href="#">Sweaters (1)</a>
+                        </li>
+                        <li>
+                            <a href="#">Jeans (1)</a>
+                        </li>
+                        <li>
+                            <a href="#">Skirts (1)</a>
+                        </li>
+                        <li>
+                            <a href="#">Monos (1)</a>
+                        </li>
+                    </ul>
+                    <div class="linea"></div>
+                    <span><b>MATERIALES</b></span>
+                    <ul>
+                        <li>
+                            <a href="#">Algodón Orgánico</a>
+                        </li>
+                        <li>
+                            <a href="#">Cupro</a>
+                        </li>
+                        <li>
+                            <a href="#">Ecovero</a>
+                        </li>
+                        <li>
+                            <a href="#">Bamboo</a>
+                        </li>
+                        <li>
+                            <a href="#">EcoDenim</a>
+                        </li>
+                        <li>
+                            <a href="#">Tencel</a>
+                        </li>
+                        <li>
+                            <a href="#">Lana</a>
+                        </li>
+                    </ul>
+                    <div class="linea"></div>
+                    <span><b>TAMAÑO</b></span>
+                    <div class="colorsize-link">
+                        <input type="checkbox" class="square form-check-input" id="pequeño">
+                        <label for="pequeño">S</label>
+                    </div>
+                    <div class="colorsize-link">
+                        <input type="checkbox" class="square form-check-input" id="mediano">
+                        <label for="mediano">M</label>
+                    </div>
+                    <div class="colorsize-link">
+                        <input type="checkbox" class="square form-check-input" id="grande">
+                        <label for="grande">L</label>
+                    </div>
+                    <div class="colorsize-link">
+                        <input type="checkbox" class="square form-check-input" id="extragrande">
+                        <label for="extragrande">XL</label>
+                    </div>
+                    <div class="linea"></div>
+                    <span><b>COLOR</b></span>
+                    <div class="colorsize-link">
+                        <input type="checkbox" class="color-circle">
+                        <div class="color-circle purple"></div>
+                        <label class="text-link" for="purple">Purpura</label>
+                    </div>
+                    <div class="colorsize-link">
+                        <input type="checkbox" class="color-circle">
+                        <div class="color-circle black"></div>
+                        <label class="text-link" for="black">Negro</label>
+                    </div>
+                    <div class="colorsize-link">
+                        <input type="checkbox" class="color-circle">
+                        <div class="color-circle yellow"></div>
+                        <label class="text-link" for="tellow">Yellow</label>
+                    </div>
+                    <div class="colorsize-link">
+                        <input type="checkbox" class="color-circle">
+                        <div class="color-circle green"></div>
+                        <label class="text-link" for="green">Verde Esmeralda</label>
+                    </div>
+                    <div class="linea"></div>
+                </form>
+            </section>
+            <div class="products">
+                <section class="produ1">
+                    <img src="../img/produ/produ-ap-tienda1.webp" alt="foto skirt florecer">
+                    <p>Lorem Ipsum - 125€</p>
+                    <input type="button" class="button-tienda" value="Añadir al Carrito">
+                </section>
+                <section class="produ2">
+                    <img src="../img/produ/produ-ap-tienda2.webp" alt="foto vestido esmeralda">
+                    <p>Lorem Ipsum - 98,95€</p>
+                    <input type="button" class="button-tienda" value="Añadir al Carrito">
+                </section>
+                <section class="produ3">
+                    <img src="../img/produ/produ-ap-tienda3.webp" alt="abrigo red">
+                    <p>Lorem Ipsum - 58,90€</p>
+                    <input type="button" class="button-tienda" value="Añadir al Carrito">
+                </section>
+                <section class="produ4">
+                    <img src="../img/produ/produ-ap-tienda4.webp" alt="top verde">
+                    <p>Lorem Ipsum - 112,95€</p>
+                    <input type="button" class="button-tienda" value="Añadir al Carrito">
+                </section>
+                <section class="produ2">
+                    <img src="../img/produ/produ-ap-tienda2.webp" alt="foto vestido esmeralda">
+                    <p>Lorem Ipsum - 98,95€</p>
+                    <input type="button" class="button-tienda" value="Añadir al Carrito">
+                </section>
+                <section class="produ3">
+                    <img src="../img/produ/produ-ap-tienda3.webp" alt="abrigo red2">
+                    <p>Lorem Ipsum - 58,90€</p>
+                    <input type="button" class="button-tienda" value="Añadir al Carrito">
+                </section>
+            </div>
+            <section class="navegar">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link  shadow-sm p-2 mb-1 bg-body-tertiary rounded" href="#"
+                                aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link  shadow-sm p-2 mb-1 bg-body-tertiary rounded"
+                                href="#">1</a></li>
+                        <li class="page-item"><a class="page-link  shadow-sm p-2 mb-1 bg-body-tertiary rounded"
+                                href="#">2</a></li>
+                        <li class="page-item"><a class="page-link  shadow-sm p-2 mb-1 bg-body-tertiary rounded"
+                                href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link  shadow-sm p-2 mb-1 bg-body-tertiary rounded" href="#"
+                                aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </section>
+    </main>
+    <!-- ends main -->
+    <footer>
+        <section class="footer-redes grfoo1">
+            <div>
+                <img class="img-logo-fo" src="../img/logos/logo-ap-white.svg" alt="logo alma pura blanc0">
+            </div>
+            <div class="icon-foot">
+                <a href="https://www.linkedin.com/">
+                    <img class="icon-light-fo" src="../img/icon/icono-ap-lin-light.svg" alt="contactanos por instagram">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="../img/icon/icono-ap-ins-light.svg" alt="contactanos por instagram">
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <img src="../img/icon/icono-ap-twi-light.svg" alt="contactanos por twiter">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="../img/icon/icono-ap-correo-light.svg" alt="contactanos por correo">
+                </a>
+            </div>
+        </section>
+        <!-- ends redes -->
+        <section class="text-footer grfoo2">
+            <h6>“Cada trazo y cada corte fue hecho con el alma”</h6>
+        </section>
+        <div class="textfoot">
+            <section class="grfoo3">
+                <ul>
+                    <p>Información Útil</p>
+                    <li>
+                        <a href="#">Políticas de Privacidad</a>
+                    </li>
+                    <li>
+                        <a href="#">Términos y Condiciones</a>
+                    </li>
+                    <li>
+                        <a href="#">Política de Cookies</a>
+                    </li>
+                    <li>
+                        <a href="#">Envío y Entrega</a>
+                    </li>
+                    <li>
+                        <a href="#">Devoluciones</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="grfoo4">
+                <ul>
+                    <p>Contacto</p>
+                    <h5>tienda@almapura.com</h5>
+                    <h5>+34 626 12 34 56</h5>
+                    <h5>Av. Mitre 123, Barcelona, ES.</h5>
+                    <h5>Lun - Vie: 9.00 a 18.00 hs.</h5>
+                    <li>
+                        <a href="https://goo.gl/maps/ZTu29SDP6AtmrMK87?coh=178573&entry=tt" class="text-yellow">Ver
+                            Mapa</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <section class="text-footer-copy grfoo5">
+            <p>AlmaPura, Moda Sostenible © 2023 Todos los derechos reservados</p>
+        </section>
+    </footer>
+    <!-- ends footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
